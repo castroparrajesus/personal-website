@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Portafolio de Jesús Alfonso Castro Parra</title>
+    <link rel="icon" href="fotos/foto%20logo.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="fotos/foto%20logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+    <header id="header">
+        <nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="#home" data-en="Home" data-pt="Início"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#about" data-en="About Me" data-pt="Sobre Mim"><i class="fas fa-user"></i> Sobre Mí</a></li>
+                <li><a href="#education" data-en="Education" data-pt="Educação"><i class="fas fa-graduation-cap"></i> Educación</a></li>
+                <li><a href="#skills" data-en="Skills" data-pt="Habilidades"><i class="fas fa-code"></i> Habilidades</a></li>
+                <li><a href="#projects" data-en="Projects" data-pt="Projetos"><i class="fas fa-project-diagram"></i> Proyectos</a></li>
+                <li><a href="#experience" data-en="Experience" data-pt="Experiência"><i class="fas fa-briefcase"></i> Experiencia</a></li>
+                <li><a href="#certifications" data-en="Certifications" data-pt="Certificações"><i class="fas fa-certificate"></i> Certificaciones</a></li>
+                <li><a href="#languages" data-en="Languages" data-pt="Idiomas"><i class="fas fa-language"></i> Idiomas</a></li>
+                <li><a href="#contact" data-en="Contact" data-pt="Contato"><i class="fas fa-envelope"></i> Contacto</a></li>
+                <li><button id="lang-toggle">EN</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="home-content">
+                <div class="text">
+                    <p class="welcome" data-en="WELCOME TO MY PORTFOLIO" data-pt="BEM-VINDO AO MEU PORTFÓLIO">BIENVENIDOS A MI PORTAFOLIO</p>
+                    <h1 data-en="Jesus Alfonso Castro Parra" data-pt="Jesus Alfonso Castro Parra">Jesús Alfonso Castro Parra</h1>
+                    <p data-en="Systems Engineering Student | Cybersecurity | IT Infrastructure" data-pt="Estudante de Engenharia de Sistemas | Cibersegurança | Infraestrutura de TI">Estudiante de Ingeniería de Sistemas | Ciberseguridad | Infraestructura TI</p>
+                    <div class="buttons">
+                        <div class="buttons-row">
+                            <a href="#projects" class="btn" data-en="Explore my work" data-pt="Explorar meu trabalho"><i class="fas fa-arrow-right"></i> Explorar mi trabajo</a>
+                            <a href="pdf/cv.pdf" download class="btn" data-en="Download my CV" data-pt="Baixar meu CV"><i class="fas fa-download"></i> Descargar mi CV</a>
+                        </div>
+                        <div class="buttons-row social-row">
+                            <a href="https://github.com/castroparrajesus" target="_blank" class="btn social"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/jesús-alfonso-castro-parra-498138190" target="_blank" class="btn social"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.fiverr.com/ittsparra12" target="_blank" class="btn social"><i class="fas fa-briefcase"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="fotos/foto.jpeg" alt="Jesús Alfonso Castro Parra">
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2 data-en="About Me" data-pt="Sobre Mim">Sobre Mí</h2>
+            <p data-en="Systems and Computing Engineer about to graduate, with a focus on cybersecurity, infrastructure monitoring and systems administration. Practical experience in enterprise environments implementing monitoring tools, technology asset management and basic vulnerability analysis. Highlighted for process documentation, preparation of technical manuals, teamwork and commitment to continuous improvement.">Ingeniero de Sistemas y Computación próximo a egresar, con enfoque en ciberseguridad, monitoreo de infraestructura y administración de sistemas. Experiencia práctica en entornos empresariales en la implementación de herramientas de monitoreo, gestión de activos tecnológicos y análisis básico de vulnerabilidades. Destacado por la documentación de procesos, elaboración de manuales técnicos, trabajo en equipo y compromiso con la mejora continua.</p>
+            <div class="stats">
+                <div class="stat" data-en="6 months experience"><i class="fas fa-clock"></i> 6 meses de experiencia</div>
+                <div class="stat" data-en="5+ certifications"><i class="fas fa-award"></i> 5+ certificaciones</div>
+                <div class="stat" data-en="6 technologies mastered"><i class="fas fa-code"></i> 6 tecnologías dominadas</div>
+            </div>
+        </section>
+        <section id="education">
+            <h2 data-en="Education" data-pt="Educação">Educación</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="left">
+                            <p data-en="Universidad Tecnológica de Bolívar"><i class="fas fa-graduation-cap"></i> <strong>Universidad Tecnológica de Bolívar</strong></p>
+                            <p data-en="Systems and Computing Engineering"><strong>Ingeniería de Sistemas y Computación</strong></p>
+                            <p data-en="Feb. 2020 – May. 2026"><strong>Feb. 2020 – May. 2026</strong></p>
+                        </div>
+                        <div class="right">
+                            <p data-en="Comprehensive professional in systems and computer engineering, trained to design, develop, implement and manage technological solutions, software and complex information systems, optimizing organizational processes and leading ICT projects with an ethical and analytical approach.">Profesional integral en ingeniería de sistemas y computación, capacitado para diseñar, desarrollar, implementar y gestionar soluciones tecnológicas, software y sistemas de información complejos, optimizando procesos organizacionales y liderando proyectos TIC con enfoque ético y analítico.</p>
+                            <p data-en="Thesis Project: Telemedicine Platform for Rural Areas"><strong>Proyecto de grado:</strong> Plataforma de Telemedicina para Zonas Rurales</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="left">
+                            <p data-en="SENA"><i class="fas fa-graduation-cap"></i> <strong>SENA</strong></p>
+                            <p data-en="Treatment of Cybersecurity Risks in SMEs"><strong>Tratamiento de Riesgos de Ciberseguridad en MiPymes</strong></p>
+                            <p data-en="Sept. 2025 – Present"><strong>Sept. 2025 – Presente</strong></p>
+                        </div>
+                        <div class="right">
+                            <p data-en="Technical program focused on threat and vulnerability analysis, control assessment and cybersecurity risk treatment in micro, small and medium-sized enterprises (MSMEs), applying national and international standards and methodologies.">Programa técnico orientado al análisis de amenazas y vulnerabilidades, evaluación de controles y tratamiento de riesgos de ciberseguridad en micro, pequeñas y medianas empresas (Mipymes), aplicando estándares y metodologías nacionales e internacionales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2 data-en="Skills and Technologies" data-pt="Habilidades">Habilidades y Tecnologías</h2>
+            <div class="stats">
+                <div class="stat" data-en="5+ Academic Projects"><i class="fas fa-project-diagram"></i> 5+ Proyectos Académicos</div>
+                <div class="stat" data-en="6 Months of Experience"><i class="fas fa-clock"></i> 6 Meses de Experiencia</div>
+                <div class="stat" data-en="11+ Certifications"><i class="fas fa-award"></i> 11+ Certificaciones</div>
+            </div>
+            
+            <div class="skill-filters">
+                <button class="filter-btn active" data-filter="all" data-en="All" data-pt="Todos">Todas</button>
+                <button class="filter-btn" data-filter="security" data-en="Security" data-pt="Segurança">Ciberseguridad</button>
+                <button class="filter-btn" data-filter="infrastructure" data-en="Infrastructure" data-pt="Infraestrutura">Infraestructura</button>
+                <button class="filter-btn" data-filter="networks" data-en="Networks" data-pt="Redes">Redes</button>
+            </div>
+
+            <div class="skills-cards-grid">
+                <div class="skill-card" data-category="security">
+                    <div class="skill-card-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3 data-en="CYBERSECURITY AND INFRASTRUCTURE">CIBERSEGURIDAD E INFRAESTRUCTURA</h3>
+                    </div>
+                    <p class="skill-card-description" data-en="System protection and monitoring of enterprise IT environments.">Protección de sistemas y monitoreo de entornos empresariales de TI.</p>
+                    <ul class="skill-card-list">
+                        <li data-en="Infrastructure and services monitoring using tools like Zabbix, Centreon and Cacti."><i class="fas fa-check-circle"></i> Monitoreo de infraestructura y servicios utilizando herramientas como Zabbix, Centreon y Cacti.</li>
+                        <li data-en="Basic vulnerability analysis and security activities support with Tenable and Kali Linux."><i class="fas fa-check-circle"></i> Análisis básico de vulnerabilidades y apoyo en actividades de seguridad con Tenable y Kali Linux.</li>
+                        <li data-en="Access management and support for secure remote access solutions using Apache Guacamole."><i class="fas fa-check-circle"></i> Gestión de accesos y soporte a soluciones de acceso remoto seguro mediante Apache Guacamole.</li>
+                    </ul>
+                    <div class="tech-badges">
+                        <span class="tech-badge">Zabbix</span>
+                        <span class="tech-badge">Centreon</span>
+                        <span class="tech-badge">Cacti</span>
+                        <span class="tech-badge">Tenable</span>
+                        <span class="tech-badge">Apache Guacamole</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="infrastructure">
+                    <div class="skill-card-header">
+                        <i class="fas fa-server"></i>
+                        <h3 data-en="INFRASTRUCTURE AND SYSTEMS ADMINISTRATION">INFRAESTRUCTURA Y ADMINISTRACIÓN DE SISTEMAS</h3>
+                    </div>
+                    <p class="skill-card-description" data-en="Systems administration and support in enterprise environments.">Administración y soporte de sistemas en entornos empresariales.</p>
+                    <ul class="skill-card-list">
+                        <li data-en="Technology asset management and IT infrastructure inventory using GLPI."><i class="fas fa-check-circle"></i> Gestión de activos tecnológicos e inventario de infraestructura TI mediante GLPI.</li>
+                        <li data-en="Basic Linux system administration, permission management, services and support tasks."><i class="fas fa-check-circle"></i> Administración básica de sistemas Linux, manejo de permisos, servicios y tareas de soporte.</li>
+                        <li data-en="Attention and support in incident management, technical reports preparation and process documentation."><i class="fas fa-check-circle"></i> Atención y apoyo en la gestión de incidentes, elaboración de reportes técnicos y documentación de procesos.</li>
+                    </ul>
+                    <div class="tech-badges">
+                        <span class="tech-badge">GLPI</span>
+                        <span class="tech-badge">Linux</span>
+                        <span class="tech-badge">Ubuntu</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-category="networks">
+                    <div class="skill-card-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3 data-en="NETWORKS AND TECHNICAL SUPPORT">REDES Y SOPORTE TÉCNICO</h3>
+                    </div>
+                    <p class="skill-card-description" data-en="Support and assurance of network environments.">Soporte y aseguramiento de entornos de red.</p>
+                    <ul class="skill-card-list">
+                        <li data-en="Knowledge in network fundamentals such as TCP/IP, DNS and HTTP/HTTPS."><i class="fas fa-check-circle"></i> Conocimientos en fundamentos de redes como TCP/IP, DNS y HTTP/HTTPS.</li>
+                        <li data-en="IP telephony support, structured cabling and site surveys."><i class="fas fa-check-circle"></i> Soporte en telefonía IP, cableado estructurado y realización de site surveys.</li>
+                        <li data-en="Support in network monitoring, alert review and performance metrics."><i class="fas fa-check-circle"></i> Apoyo en el monitoreo de red, revisión de alertas y métricas de rendimiento.</li>
+                    </ul>
+                    <div class="tech-badges">
+                        <span class="tech-badge">TCP/IP</span>
+                        <span class="tech-badge">DNS</span>
+                        <span class="tech-badge">3CX</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2 data-en="Projects" data-pt="Projetos">Proyectos</h2>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all" data-en="All" data-pt="Todos">Todos</button>
+                <button class="filter-btn" data-filter="web" data-en="Web" data-pt="Web">Web</button>
+                <button class="filter-btn" data-filter="app" data-en="Apps" data-pt="Apps">Apps</button>
+                <button class="filter-btn" data-filter="security" data-en="Security" data-pt="Segurança">Seguridad</button>
+                <button class="filter-btn" data-filter="infrastructure" data-en="Infrastructure" data-pt="Infraestrutura">Infraestructura</button>
+            </div>
+
+            <p data-en="I currently have no published personal or collaborative projects, but I am working on developing my skills in future projects.">Actualmente no tengo proyectos personales o colaborativos publicados, pero estoy trabajando en desarrollar mis habilidades en proyectos futuros.</p>
+        </section>
+        <section id="experience">
+            <h2 data-en="Experience" data-pt="Experiência">Experiencia</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="left">
+                            <p data-en="IT Infrastructure and Cybersecurity Intern"><i class="fas fa-briefcase"></i> <strong>Practicante de Infraestructura de TI y Ciberseguridad</strong></p>
+                            <p data-en="Aguas de Cartagena"><strong>Aguas de Cartagena</strong></p>
+                            <p data-en="Feb. 2025 – Aug. 2025"><strong>Feb. 2025 – Ago. 2025</strong></p>
+                        </div>
+                        <div class="right">
+                            <p data-en="Support in the administration of technological platforms, continuous monitoring of IT infrastructure and active participation in cybersecurity projects. Implementation of cybersecurity measures and management of corporate telecommunications.">Apoyo en la administración de plataformas tecnológicas, monitoreo continuo de infraestructura de TI y participación activa en proyectos de seguridad informática. Implementación de medidas de ciberseguridad y gestión de telecomunicaciones empresariales.</p>
+                            <p data-en="Main responsibilities:"><strong>Responsabilidades principales:</strong></p>
+                            <ul>
+                                <li data-en="Administration and updating of GLPI, asset inventory and technical manuals"><i class="fas fa-check-circle"></i> Administración y actualización de GLPI, inventario de activos y manuales técnicos</li>
+                                <li data-en="Implementation and support of monitoring and remote access tools"><i class="fas fa-check-circle"></i> Implementación y soporte de herramientas de monitoreo y acceso remoto</li>
+                                <li data-en="Participation in cybersecurity projects and vulnerability analysis"><i class="fas fa-check-circle"></i> Participación en proyectos de ciberseguridad y análisis de vulnerabilidades</li>
+                                <li data-en="Support in IP telephony, structured cabling and site surveys"><i class="fas fa-check-circle"></i> Soporte en telefonía IP, cableado estructurado y site surveys</li>
+                                <li data-en="Preparation of technical reports and support in incident management"><i class="fas fa-check-circle"></i> Elaboración de reportes técnicos y apoyo en la gestión de incidentes</li>
+                            </ul>
+                            <p data-en="Technologies used:"><strong>Tecnologías utilizadas:</strong></p>
+                            <div class="tech-badges">
+                                <span class="tech-badge" data-en="GLPI">GLPI</span>
+                                <span class="tech-badge" data-en="Zabbix">Zabbix</span>
+                                <span class="tech-badge" data-en="Centreon">Centreon</span>
+                                <span class="tech-badge" data-en="Cacti">Cacti</span>
+                                <span class="tech-badge" data-en="Apache Guacamole">Apache Guacamole</span>
+                                <span class="tech-badge" data-en="Tenable">Tenable</span>
+                                <span class="tech-badge" data-en="OpenVAS">OpenVAS</span>
+                                <span class="tech-badge" data-en="NetData">NetData</span>
+                                <span class="tech-badge" data-en="3CX">3CX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="certifications">
+            <h2 data-en="Certifications" data-pt="Certificações">Certificaciones</h2>
+            <div class="certifications-list">
+                <div class="certification-item">
+                    <div class="cert-info">
+                        <i class="fas fa-certificate"></i>
+                        <span data-en="Exploratory Data Analysis in Python – SENA (October 2025)">Análisis Exploratorio de Datos en Python – SENA (Octubre 2025)</span>
+                    </div>
+                    <a href="pdf/ANALISIS EXPLORATORIO DE DATOS EN PYTHON..pdf" class="cert-btn" target="_blank" data-en="View Certificate">Ver Certificado</a>
+                </div>
+                <div class="certification-item">
+                    <div class="cert-info">
+                        <i class="fas fa-certificate"></i>
+                        <span data-en="Networks and Security – SENA (October 2025)">Redes y Seguridad – SENA (Octubre 2025)</span>
+                    </div>
+                    <a href="pdf/REDES Y SEGURIDAD.pdf" class="cert-btn" target="_blank" data-en="View Certificate">Ver Certificado</a>
+                </div>
+                <div class="certification-item">
+                    <div class="cert-info">
+                        <i class="fas fa-certificate"></i>
+                        <span data-en="Concepts Appropriation in Cybersecurity – SENA (September 2025)">Apropiación de Conceptos en Ciberseguridad – SENA (Septiembre 2025)</span>
+                    </div>
+                    <a href="pdf/APROPIACION DE LOS CONCEPTOS EN CIBERSEGURIDAD..pdf" class="cert-btn" target="_blank" data-en="View Certificate">Ver Certificado</a>
+                </div>
+                <div class="certification-item">
+                    <div class="cert-info">
+                        <i class="fas fa-certificate"></i>
+                        <span data-en="Mitigation and Prevention of Cybersecurity Threats – SENA (September 2025)">Mitigación y Prevención de Amenazas en Ciberseguridad – SENA (Septiembre 2025)</span>
+                    </div>
+                    <a href="pdf/MITIGACION Y PREVENCION DE AMENAZAS EN CIBERSEGURIDAD.pdf" class="cert-btn" target="_blank" data-en="View Certificate">Ver Certificado</a>
+                </div>
+                <div class="certification-item">
+                    <div class="cert-info">
+                        <i class="fas fa-certificate"></i>
+                        <span data-en="Basic Foundations in Java Programming – SENA (August 2019)">Fundamentos Básicos en Programación Java – SENA (Agosto 2019)</span>
+                    </div>
+                    <a href="pdf/FUNDAMENTOS BASICOS EN PROGRAMACIÓN JAVA.pdf" class="cert-btn" target="_blank" data-en="View Certificate">Ver Certificado</a>
+                </div>
+                <div class="certification-item">
+                    <div class="cert-info">
+                        <i class="fas fa-certificate"></i>
+                        <span data-en="Software Testing Management – SENA (June 2024)">Manejo de Pruebas de Software – SENA (Junio 2024)</span>
+                    </div>
+                    <a href="pdf/MANEJO DE PRUEBAS DE SOFTWARE..pdf" class="cert-btn" target="_blank" data-en="View Certificate">Ver Certificado</a>
+                </div>
+                <div class="certification-item">
+                    <div class="cert-info">
+                        <i class="fas fa-certificate"></i>
+                        <span data-en="Quality in Software Development – SENA (July 2024)">Calidad en el Desarrollo de Software – SENA (Julio 2024)</span>
+                    </div>
+                    <a href="pdf/CALIDAD EN EL DESARROLLO DE SOFTWARE.pdf" class="cert-btn" target="_blank" data-en="View Certificate">Ver Certificado</a>
+                </div>
+                <div class="certification-item">
+                    <div class="cert-info">
+                        <i class="fas fa-certificate"></i>
+                        <span data-en="Variables and Control Structures in Python – SENA (November 2025)">Variables y Estructuras de Control en Python – SENA (Noviembre 2025)</span>
+                    </div>
+                    <a href="pdf/VARIABLES Y ESTRUCTURAS DE CONTROL EN PYTHON.pdf" class="cert-btn" target="_blank" data-en="View Certificate">Ver Certificado</a>
+                </div>
+                <div class="certification-item">
+                    <div class="cert-info">
+                        <i class="fas fa-certificate"></i>
+                        <span data-en="IT Audit: Conceptualization – SENA (November 2025)">Auditoría Informática: Conceptualización – SENA (Noviembre 2025)</span>
+                    </div>
+                    <a href="pdf/AUDITORIA INFORMATICA CONCEPTUALIZACION.pdf" class="cert-btn" target="_blank" data-en="View Certificate">Ver Certificado</a>
+                </div>
+                <div class="certification-item">
+                    <div class="cert-info">
+                        <i class="fas fa-certificate"></i>
+                        <span data-en="IT Controls and Security – SENA (November 2025)">Controles y Seguridad Informática – SENA (Noviembre 2025)</span>
+                    </div>
+                    <a href="pdf/CONTROLES Y SEGURIDAD INFORMATICA.pdf" class="cert-btn" target="_blank" data-en="View Certificate">Ver Certificado</a>
+                </div>
+                <div class="certification-item">
+                    <div class="cert-info">
+                        <i class="fas fa-certificate"></i>
+                        <span data-en="Intermediate Artificial Intelligence – Talento Tech (August 2025)">Inteligencia Artificial Nivel Intermedio – Talento Tech (Agosto 2025)</span>
+                    </div>
+                    <a href="pdf/INTELIGENCIA ARTIFICIAL NIVEL INTERMEDIO.pdf" class="cert-btn" target="_blank" data-en="View Certificate">Ver Certificado</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 data-en="Contact" data-pt="Contato">Contacto</h2>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h3 data-en="Send me a message">Envíame un mensaje</h3>
+                    <form action="https://formspree.io/f/xvzkdewv" method="POST">
+                        <div class="form-group">
+                            <label for="name" data-en="Name">Nombre</label>
+                            <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-en="Email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-en="Subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Asunto del mensaje">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-en="Message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" data-en="Send Message"><i class="fas fa-paper-plane"></i> Enviar Mensaje</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3 data-en="Contact Information">Información de Contacto</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-en="Email">Email</h4>
+                            <p>Castroparrajesus@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-en="Phone">Teléfono</h4>
+                            <p>3004897509</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 data-en="Location">Ubicación</h4>
+                            <p>Cartagena, Colombia</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://www.linkedin.com/in/jesús-alfonso-castro-parra-498138190" target="_blank">Ver perfil</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p><a href="https://github.com/castroparrajesus" target="_blank">Ver repositorios</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-briefcase"></i>
+                        <div>
+                            <h4>Fiverr</h4>
+                            <p><a href="https://www.fiverr.com/ittsparra12" target="_blank">Ver servicios</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="languages">
+            <h2 data-en="Languages" data-pt="Idiomas">Idiomas</h2>
+            <div class="skills-grid">
+                <div class="skill" data-en="Spanish (Native)"><i class="fas fa-language"></i> Español (Nativo)</div>
+                <div class="skill" data-en="English (Basic)"><i class="fas fa-language"></i> Inglés (Básico)</div>
+                <div class="skill" data-en="Portuguese (Basic)"><i class="fas fa-language"></i> Portugués (Básico)</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3 data-en="Jesús Alfonso Castro Parra">Jesús Alfonso Castro Parra</h3>
+                <p data-en="Systems Engineering student with experience in IT infrastructure, cybersecurity, and telecommunications. Passionate about technology and innovation.">Estudiante de Ingeniería de Sistemas con experiencia en infraestructura de TI, ciberseguridad y telecomunicaciones. Apasionado por la tecnología y la innovación.</p>
+            </div>
+            <div class="footer-column">
+                <h3 data-en="Quick Links">Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#home" data-en="Home"><i class="fas fa-angle-right"></i> Inicio</a></li>
+                    <li><a href="#about" data-en="About Me"><i class="fas fa-angle-right"></i> Sobre Mí</a></li>
+                    <li><a href="#education" data-en="Education"><i class="fas fa-angle-right"></i> Educación</a></li>
+                    <li><a href="#skills" data-en="Skills"><i class="fas fa-angle-right"></i> Habilidades</a></li>
+                    <li><a href="#projects" data-en="Projects"><i class="fas fa-angle-right"></i> Proyectos</a></li>
+                    <li><a href="#experience" data-en="Experience"><i class="fas fa-angle-right"></i> Experiencia</a></li>
+                    <li><a href="#certifications" data-en="Certifications"><i class="fas fa-angle-right"></i> Certificaciones</a></li>
+                    <li><a href="#languages" data-en="Languages"><i class="fas fa-angle-right"></i> Idiomas</a></li>
+                    <li><a href="#contact" data-en="Contact"><i class="fas fa-angle-right"></i> Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-en="Follow Me">Sígueme</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/castroparrajesus" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jesús-alfonso-castro-parra-498138190" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.fiverr.com/ittsparra12" target="_blank" aria-label="Fiverr"><i class="fas fa-briefcase"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="visitor-counter">
+                <span class="visitor-label" data-en="Visitors">Visitantes</span>
+                <div class="visitor-value">
+                    <i class="fas fa-eye"></i>
+                    <strong id="visit-count">--</strong>
+                </div>
+            </div>
+            <p data-en="&copy; 2025 Jesus Castro. Made with ❤️ All rights reserved.">&copy; 2025 Jesús Castro. Hecho con ❤️ Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <button id="back-to-top" title="Volver arriba">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>

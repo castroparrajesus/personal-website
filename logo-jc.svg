@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">Logotipo JC</title>
+  <desc id="desc">Monograma circular con las iniciales JC</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00aaff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0066cc" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="url(#bg)" stroke="#002244" stroke-width="4" />
+  <circle cx="60" cy="60" r="46" fill="none" stroke="#e0f6ff" stroke-width="4" stroke-opacity="0.6" />
+  <text x="50%" y="58%" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', 'Roboto', sans-serif" font-size="44" font-weight="700">JC</text>
+</svg>
