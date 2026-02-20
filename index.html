@@ -178,7 +178,45 @@
                 <button class="filter-btn" data-filter="infrastructure" data-en="Infrastructure" data-pt="Infraestrutura">Infraestructura</button>
             </div>
 
-            <p data-en="I currently have no published personal or collaborative projects, but I am working on developing my skills in future projects.">Actualmente no tengo proyectos personales o colaborativos publicados, pero estoy trabajando en desarrollar mis habilidades en proyectos futuros.</p>
+            <div class="projects-grid">
+                <!-- Ejemplo de proyecto web - duplica este bloque para agregar más proyectos -->
+                <div class="project" data-category="web">
+                    <div class="project-preview">
+                        <iframe src="https://chrono-hub-website.vercel.app" 
+                                title="ChronoHub Preview" 
+                                loading="lazy"
+                                sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                        <div class="project-overlay">
+                            <div class="project-icon-large">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 data-en="ChronoHub">ChronoHub</h3>
+                            <div class="project-status" data-en="Live">En Vivo</div>
+                        </div>
+                        <p data-en="Complete suite of free time tools: timer, customizable alarms, stopwatch, countdown, world clocks and calculators. Works 100% in your browser without registration, with automatic saving.">Suite completa de herramientas de tiempo gratuitas: temporizador, alarmas personalizables, cronómetro, cuenta regresiva, relojes mundiales y calculadoras. Funciona 100% en tu navegador sin registro, con guardado automático.</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">LocalStorage</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://chrono-hub-website.vercel.app" target="_blank" class="btn btn-primary" data-en="View Live Site"><i class="fas fa-external-link-alt"></i> Ver Sitio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agrega más proyectos aquí copiando el bloque anterior -->
+                
+            </div>
+            
+            <p class="empty-projects-message" style="display: none;" data-en="I currently have no published personal or collaborative projects in this category, but I am working on developing my skills in future projects.">Actualmente no tengo proyectos personales o colaborativos publicados en esta categoría, pero estoy trabajando en desarrollar mis habilidades en proyectos futuros.</p>
         </section>
         <section id="experience">
             <h2 data-en="Experience" data-pt="Experiência">Experiencia</h2>

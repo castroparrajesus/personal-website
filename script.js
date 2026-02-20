@@ -139,6 +139,7 @@ updateVisitCounter();
 // Filtros de proyectos
 const filterBtns = document.querySelectorAll('.filter-btn');
 const projects = document.querySelectorAll('.project');
+const emptyMessage = document.querySelector('.empty-projects-message');
 
 filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -147,6 +148,7 @@ filterBtns.forEach(btn => {
         btn.classList.add('active');
         
         const filter = btn.dataset.filter;
+        let visibleCount = 0;
         
         projects.forEach(project => {
             const categories = project.dataset.category;
@@ -155,10 +157,21 @@ filterBtns.forEach(btn => {
                 project.classList.remove('hidden');
                 // Animación de entrada
                 project.style.animation = 'fadeInUp 0.5s ease forwards';
+                visibleCount++;
             } else {
                 project.classList.add('hidden');
             }
         });
+        
+        // Mostrar mensaje si no hay proyectos en esta categoría
+        if (emptyMessage) {
+            if (visibleCount === 0) {
+                emptyMessage.style.display = 'block';
+                emptyMessage.style.animation = 'fadeInUp 0.5s ease forwards';
+            } else {
+                emptyMessage.style.display = 'none';
+            }
+        }
     });
 });
 
