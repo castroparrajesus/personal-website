@@ -644,6 +644,40 @@ section h2 {
     margin-left: -70%;
 }
 
+/* Preview elegante para Luxury Mompox */
+.project-preview.luxury-preview {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f0f 100%);
+    position: relative;
+}
+
+.project-preview.luxury-preview::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(45deg, transparent 30%, rgba(212, 175, 55, 0.1) 50%, transparent 70%),
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(212, 175, 55, 0.03) 2px, rgba(212, 175, 55, 0.03) 4px);
+    opacity: 0.5;
+}
+
+.project-preview.luxury-preview::after {
+    content: 'LUXURY MOMPOX';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: rgba(212, 175, 55, 0.3);
+    text-align: center;
+    width: 80%;
+    z-index: 1;
+}
+
 .project-overlay {
     position: absolute;
     top: 0;
