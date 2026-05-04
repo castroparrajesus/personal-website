@@ -637,7 +637,11 @@ section h2 {
 /* Estilos específicos para iframes que no cargan bien */
 .project-preview iframe[src*="luxury-mompox"] {
     background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-    filter: brightness(1.1) contrast(1.05);
+    filter: brightness(1.15) contrast(1.1) saturate(1.05);
+    transform: scale(0.9);
+    width: 140%;
+    height: 320px;
+    margin-left: -70%;
 }
 
 .project-overlay {
