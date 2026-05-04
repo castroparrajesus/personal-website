@@ -634,6 +634,12 @@ section h2 {
     margin-left: -62.5%;
 }
 
+/* Estilos específicos para iframes que no cargan bien */
+.project-preview iframe[src*="luxury-mompox"] {
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    filter: brightness(1.1) contrast(1.05);
+}
+
 .project-overlay {
     position: absolute;
     top: 0;
